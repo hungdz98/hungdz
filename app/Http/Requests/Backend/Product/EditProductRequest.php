@@ -1,0 +1,41 @@
+<?php
+
+namespace App\Http\Requests\Backend\Product;
+
+use Illuminate\Foundation\Http\FormRequest;
+
+class EditProductRequest extends FormRequest {
+	/**
+	 * Determine if the user is authorized to make this request.
+	 *
+	 * @return bool
+	 */
+	public function authorize() {
+		return true;
+	}
+
+	/**
+	 * Get the validation rules that apply to the request.
+	 *
+	 * @return array
+	 */
+	public function rules() {
+		return [
+			'name' => 'required|unique:products,name,' . $this->product,
+			'color' => 'required',
+			'description' => 'required',
+			'price' => 'required|numeric',
+			'image' => 'image|mimes:png,jpg,jpeg|max:1000',
+		];
+	}
+
+	public function messages() {
+		return [
+			'name.required' => 'Vui lòng nhập tên',
+
+			'color.required' => 'Vui lòng nhập màu',
+			'description.required' => 'Vui lòng nhập mô tả',
+			'name.unique' => 'Tên sản phẩm đã bị trùng !',
+		];
+	}
+}

@@ -1,0 +1,74 @@
+@media (max-width: 767px) and (min-width: 100px){
+html{overflow-x:hidden;}
+#content{padding: 12px 0;}
+}
+@media (max-width: 400px) and (min-width: 100px){
+.container{width:100%}
+body{padding:0px!important; margin:0px!important; border:0px!important;}
+html{overflow-x:hidden;}
+}
+@media (max-width: 416px) and (min-width: 100px){
+.container{width:100%}
+body{padding:0px!important; margin:0px!important; border:0px!important;}
+html{overflow-x:hidden;}
+}
+
+@media (max-width: 767px) {
+	.padding{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+	.contactinfo{
+	text-align: center;
+	padding-left: 60px;
+}
+.social-icons{
+	 padding-left: 90px; 
+
+}
+.header_top .col-sm-6:first-child{
+	display: inline-block;
+	float: left;
+}
+
+.header_top .col-sm-6:last-child{
+	display: inline-block;
+	float: right;
+}
+.social-icons ul li a i {
+	padding: 8px 10px;
+}
+#slides{
+	display: none;
+}
+li.userAc {
+    display: block !important;
+     float: right;
+}
+}
+
+
+@media (max-width: 480px) {
+
+	.contactinfo{
+	text-align: center;
+}
+
+.contactinfo ul li a {
+	padding-right: 15px;
+	padding-left: 0;
+}
+
+.social-icons.pull-right{
+	float: none !important;
+	text-align: center;
+}
+li.userAc {
+    display: block !important;
+    float: right;
+}
+li.userAc {
+    display:  !important;
+    float: right;
+}
+}

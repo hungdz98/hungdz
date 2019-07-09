@@ -1,0 +1,20 @@
+<div class="col-md-12">
+  <div class="producs">
+    <p class="pull-left">Kết quả tìm kiếm {{count($data)}} sản phẩm</p>
+    <div class="clearfix"></div>
+  </div>
+</div>
+@foreach($data as $p)
+<div class="col-sm-6 col-md-3">
+        <div class="product-image-wrapper">
+          <div class="single-products">
+            <div class="productinfo text-center">
+              <a href="{{url('/product-detail',$p->id)}}"><img src="{{url('uploads/products/small/',$p->image)}}" alt="" /></a>
+              <h2>{{$p->name}}</h2>
+              <p>{{number_format($p->price, 2, ',', '.').' VNĐ'}}</p>
+             <!--  <a href="" class="btn btn-default add-to-cart">View Product</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+@endforeach
