@@ -62,7 +62,7 @@
 		 				 </div>
 				    <div class="col-sm-2">
 				    	<div for="">Khoảng giá</div>
-				    	<select id="priceID" style="width: 250px;">
+				    	<select id="priceID" style="width: 200px;">
 				    		<option value="">Mặc định</option>
 				    		<option value="0-100000">0-100000</option>
 				    		<option value="100000-500000">100000-500000</option>
@@ -73,7 +73,7 @@
 				    </div>
 				          <div class="col-sm-2">
 				    	<div for="">Size</div>
-				    	<select id="sizeID" style="width: 250px;">
+				    	<select id="sizeID" style="width: 200px;">
 				    			<option value="">Tất cả</option>
 				    			<option value="37">36</option>
 								<option value="37">37</option>
@@ -90,7 +90,7 @@
 				    </div>
 				          <div class="col-sm-2">
 				    	<div for="">Color</div>
-				    	<select id="colorID" style="width: 250px;" >
+				    	<select id="colorID" style="width: 200px;" >
 				    			<option value="">Tất cả</option>
 								<option value="Black">Black</option>
 								<option value="Blue">Blue</option>
@@ -103,7 +103,7 @@
 				    </div>
 				      <div class="col-sm-2">
 				    	<div for="">Sắp xếp theo</div>
-				    	<select id="searchID"style="width: 250px;" >
+				    	<select id="searchID"style="width: 200px;" >
 				    			<option value="">Mặc định</option>
 								<option value="0">Giá thấp đến cao</option>
 								<option value="1">Giá cao điến thấp</option>

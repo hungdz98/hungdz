@@ -80,9 +80,14 @@ $sub_categories = DB::table('categories')->select('id', 'name')->where([['parent
       </li>
      @endforeach
     </ul>
-    <form class="form-inline my-2 my-lg-0" action="{{url('search')}}" method="get">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="searchData">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    <form action="{{url('search')}}" method="get">
+      <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="searchData">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+     <div class="search-box">
+
+        <input class="tbox" type="text" name="searchData" value="" placeholder="Tìm kiếm ...">
+        <button class="btn" type="submit"><i class="fa fa-search"></i></button>
+      </div>
     </form>
     	@if(Auth::check())
 
